@@ -23,9 +23,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         ViewModelObj.getCharacters {
             DispatchQueue.main.async {
-                print(5)
                 self.CharacterTableView.reloadData()
-                print(6)
             }
         }
         
