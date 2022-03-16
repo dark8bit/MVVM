@@ -19,9 +19,7 @@ class CharacterViewModel {
         APIServiceObj.getCharacterData { chars, error in
             if let c = chars {
                 self.chars = c
-                print(3)
                 onComplete()
-                print(4)
             }
         }
     }
