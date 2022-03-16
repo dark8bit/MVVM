@@ -19,9 +19,7 @@ class APIService {
             }
             
             if let decodedJSONData = try? JSONDecoder().decode(Characters.self, from: data!) {
-                print(1)
                 onCompletion(decodedJSONData.characters, nil)
-                print(2)
             }
         }
         
